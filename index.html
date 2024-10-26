@@ -1,0 +1,426 @@
+<!doctype html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title data-text="title">شركة بصمة الرؤية</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4269a2',
+              secondary: '#776d6b',
+              light: '#2192FF',
+              main_bg: '#4269a210',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./assets/css/all.min.css" >
+    <link rel="stylesheet" href="./assets/css/style.css" >
+  </head>
+  <body>
+
+    <header class="hero-section flex items-center min-h-screen relative overflow-hidden pb-10 z-10 bg-cover bg-center" style="background-image: url(./assets/images/hero-img.png);">
+
+      <nav class="absolute left-0 top-0 w-full flex items-center py-1 bg-[#00000055] rounded-b-3xl">
+        <div class="container flex justify-between items-center">
+          <!-- Logo -->
+          <figure class="logo flex gap-2 relative">
+            <img src="./assets/images/logo.png" alt="logo" height="90px" width="110px" class="object-contain rounded-md" loading="lazy">
+          </figure>
+          <!-- Links -->
+          <div class="row hidden xl:flex justify-between items-center">
+            <!-- UL Navbar -->
+            <div class="ul flex gap-8 items-center py-4">
+              <!-- Nav in full screen -->
+              <div class="flex gap-16">
+                <ul class="flex gap-10 items-center font-medium text-white text-[17px]">
+                  <li>
+                    <a href="#" class="nav-active" aria-label="Read more about Seminole tax hike" data-text="nav_home" nav-active>
+                      الرئيسية
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#who-we-are" class="" aria-label="Read more about Seminole tax hike" data-text="nav_who" nav-active>
+                      من نحن
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#services" class="" aria-label="Read more about Seminole tax hike" data-text="nav_services" nav-active>
+                      الخدمات
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#why-us" class="" aria-label="Read more about Seminole tax hike" data-text="nav_why" nav-active>
+                      لماذا نحن ؟
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="" aria-label="Read more about Seminole tax hike" data-text="nav_contact" nav-active>
+                      تواصل معنا
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Nav in Mobile -->
+          <ul class="sidebar fixed h-full w-[270px] left-0 top-[0px] -translate-x-[100%] flex flex-col items-center py-10 px-5 bg-gradient-to-l from-primary to-light text-black duration-500 shadow-md">
+
+            <button class="close-sidebar bg-gray-800 text-white h-7 w-7 rounded-full ml-auto -mt-5">X</button>
+
+            <!-- Logo -->
+            <div class="logo flex items-center gap-2 relative h-28 w-28 mt-16 mb-7">
+                <a href="#" class="overflow-hidden">
+                    <img src="./assets/images/logo.png" alt="logo" class="w-full h-full object-contain rounded-md" loading="lazy">
+                </a>
+            </div>
+
+
+            <li>
+              <a href="#" class="w-full text-white px-4 py-3 hover:pr-6 duration-300 block font-semibold text-[18px]" aria-label="Read more about Seminole tax hike" data-text="nav_home">
+                الرئيسية
+              </a>
+            </li>
+            <li>
+              <a href="#who-we-are" class="w-full text-white px-4 py-3 hover:pr-6 duration-300 block font-semibold text-[18px]" aria-label="Read more about Seminole tax hike" data-text="nav_who">
+                من نحن
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="w-full text-white px-4 py-3 hover:pr-6 duration-300 block font-semibold text-[18px]" aria-label="Read more about Seminole tax hike" data-text="nav_services">
+                الخدمات
+              </a>
+            </li>
+            <li>
+              <a href="#why-us" class="w-full text-white px-4 py-3 hover:pr-6 duration-300 block font-semibold text-[18px]" aria-label="Read more about Seminole tax hike" data-text="nav_why">
+                لماذا نحن ؟
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="w-full text-white px-4 py-3 hover:pr-6 duration-300 block font-semibold text-[18px]" aria-label="Read more about Seminole tax hike" data-text="nav_contact">
+                تواصل معنا
+              </a>
+            </li>
+          </ul>
+          <!-- Language -->
+          <div class="language text-white text-[17px] font-semibold border border-white py-1 px-2 rounded-md cursor-pointer" data-lang="EN">
+            EN
+          </div>
+          <!-- Sidebar Toggler -->
+          <div class="cursor-pointer xl:hidden w-[30px] text-gray-200">
+            <span class="toggler fas fa-bars block h-full w-full"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-32">
+
+        <!-- Info -->
+        <div class="info flex flex-col gap-5">
+
+          <h3 class="text-4xl font-bold text-white" data-text="hero_title">
+            شركة بصمة الرؤية
+          </h3>
+          <p class="text-white text-xl leading-8" data-text="hero_desc">
+            نخبة متميزة من المحامين والمستشارين المتخصصين في المجال القانوني.
+          </p>
+          <a href="#who-we-are" class="bg-gradient-to-l from-primary to-light text-white hover:text-white duration-500 py-2 px-10 rounded-md w-44 text-center text-xl mt-6 font-normal" data-text="hero_btn">
+            اقرأ المزيد
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+      
+      <section id="who-we-are" class="py-12">
+        <div class="container">
+      
+          <!-- Info -->
+          <div>
+    
+            <h3 class="main-title text-3xl md:text-[33px] font-bold text-center mb-5" data-text="who_title">
+              من نحن
+            </h3>
+    
+            <p class="text-lg text-center font-medium text-gray-600 max-w-4xl mx-auto" style="line-height: 1.7;" data-text="who_desc">
+              يعمل لدينا فريق مختار بعناية من القانونيين المتمرسين حيث نسعى جاهدين لتوفير أفضل مستوى من الخدمة بقدرة وكفاءة عالية.
+              يتميز أعضاء شركتنا بما عُرف عنهم من النزاهة والحرص والعمل الجاد والقدرة على تقييم الأوضاع القانونية وتقديم الخدمات
+              بفعالية وسرعة، والتي تقترن بمقدرتنا على إيجاد الحلول المبتكرة لأي صعوبات.
+            </p>
+
+            <div class="row mt-16 grid md:grid-cols-2 2xl:grid-cols-3 gap-8">
+            
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md bg-gradient-to-l from-primary to-light text-white || after:content-[''] after:absolute after:-top-2 after:-right-2 after:h-full after:w-full after:bg-gray-600 after:rounded-tr-[50px] after:rounded-bl-[50px] after:z-[-1]">
+                <div class="icon w-24 h-24 mb-2">
+                  <img loading="lazy" src="./assets/images/vision.png" alt="servise-img-1" class="w-full h-full object-contain">
+                </div>
+                <div class="text-2xl font-bold transition-all">
+                  <h4 data-text="who_vision_title">
+                    رؤيتنا
+                  </h4>
+                  <p class="text-lg font-normal py-2" data-text="who_vision_desc">
+                    الريادة بين شركات المحاماة والاستشارات القانونية في المملكة العربية السعودية لتصبح الشركة وجهة رائدة وموثوقة للحصول على
+                    خدمة قانونية دقيقة وفعالة وعميقة الخبرة وواسعة المعرفة ومبتكرة.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md bg-gradient-to-l from-primary to-light text-white || after:content-[''] after:absolute after:-top-2 after:-right-2 after:h-full after:w-full after:bg-gray-600 after:rounded-tr-[50px] after:rounded-bl-[50px] after:z-[-1]">
+                <div class="icon w-24 h-24 mb-2">
+                  <img loading="lazy" src="./assets/images/message.png" alt="servise-img-1" class="w-full h-full object-contain">
+                </div>
+                <div class="text-2xl font-bold transition-all">
+                  <h4 data-text="who_message_title">
+                    رسالتنا
+                  </h4>
+                  <p class="text-lg font-normal py-2" data-text="who_message_desc">
+                    تقديم خدمات قانونية ذات جودة وآداء احترافي.
+                  </p>
+                </div>
+              </div>
+            
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md bg-gradient-to-l from-primary to-light text-white || after:content-[''] after:absolute after:-top-2 after:-right-2 after:h-full after:w-full after:bg-gray-600 after:rounded-tr-[50px] after:rounded-bl-[50px] after:z-[-1]">
+                <div class="icon w-24 h-24 mb-2">
+                  <img loading="lazy" src="./assets/images/values.png" alt="servise-img-1" class="w-full h-full object-contain">
+                </div>
+                <div class="text-2xl font-bold transition-all">
+                  <h4 data-text="who_value_title">
+                    قيمنا
+                  </h4>
+                  <p class="text-lg font-normal py-2" data-text="who_value_desc">
+                    الأخلاق / الجودة / الشفافية
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+
+
+          </div>
+      
+        </div>
+      </section>
+
+      <section id="services" class="py-12 bg-gradient-to-l from-main_bg to-gray-100">
+        <div class="container">
+      
+          <!-- Info -->
+          <div>
+    
+            <h3 class="main-title text-3xl md:text-[33px] font-bold text-center mb-5" data-text="services_title">
+              خدماتنا
+            </h3>
+    
+            <div class="row mt-16 grid lg:grid-cols-2 gap-8">
+              
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md">
+                <h4 class="text-2xl font-bold text-primary" data-text="services_one_title">
+                  1- الحماية القانونية:
+                </h4>
+                <ul class="text-lg font-normal ps-12">
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_one_li1">
+                    صياغة العقود بأنواعها.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_one_li2">
+                    التمثيل في الاجتماعات وحضورها.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_one_li3">
+                    دراسة العقود قبل توقيعها.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_one_li4">
+                    دراسة تنفيذ العقود وإيضاح الالتزامات والتعويضات.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_one_li5">
+                    العلاقات العامة في توفير الإجابات لاستفسارات العميل النظامية.
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md">
+                <h4 class="text-2xl font-bold text-primary" data-text="services_two_title">
+                  2- حلول المنشآت:
+                </h4>
+                <ul class="text-lg font-normal ps-12">
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_two_li1">
+                    الحوكمة.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_two_li2">
+                    هندسة المنشآت.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_two_li3">
+                    تأسيس وتحويل الكيانات.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_two_li4">
+                    دراسة وضع الموارد البشرية.
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md">
+                <h4 class="text-2xl font-bold text-primary" data-text="services_three_title">
+                  3- تقديم الاستشارات القانونية.
+                </h4>
+              </div>
+              
+              <div class="col lg:col-span-2 relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md">
+                <h4 class="text-2xl font-bold text-primary" data-text="services_four_title">
+                  4- التقاضي
+                </h4>
+                <p data-text="services_four_desc1">
+                  تتميز الشركة بعدد من الخبراء المتمرسين، وكل محكمة لها فريق عمل متخصص، وتراعي الشركة تنوع اختصاصات المحاكم وطبيعة الترافع
+                  فيها وهي كما يلي:
+                </p>
+                <ul class="text-lg font-normal ps-12 border-b">
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li1">
+                    المحاكم العامة.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li2">
+                    المحاكم التجارية.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li3">
+                    المحاكم الإدارية.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li4">
+                    المحاكم العمالية.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li5">
+                    المحاكم الجزائية.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li6">
+                    محاكم الأحوال الشخصية.
+                  </li>
+                  <li class="relative mb-3 before:content-['✅'] before:absolute before:-right-7" data-text="services_four_li7">
+                    الترافع أمام لجان الفصل في المنازعات المصرفية التأمينية الضريبية.
+                  </li>
+                </ul>
+                <p data-text="services_four_desc2">
+                  يعتمد القسم على عدد من الإجراءات التي تسبق التعاقد مع العميل، والتي تركز على تقييم وضع العميل والقضية التي يرغب من
+                  الشركة توليها. كما تضمن الشركة تزويد جميع عملائها بتقارير مفصلة، وتسهل عملية التواصل والنقاش حول الإجراءات التي تعقب
+                  التعاقد.
+                </p>
+              </div>
+              
+            
+            </div>
+
+
+          </div>
+      
+        </div>
+      </section>
+
+      <section id="why-us" class="py-12">
+        <div class="container">
+      
+          <!-- Info -->
+          <div>
+      
+            <h3 class="main-title text-3xl md:text-[33px] font-bold text-center mb-5" data-text="why_title">
+              لماذا نحن ؟
+            </h3>
+      
+            <div class="row mt-16 grid lg:grid-cols-2 gap-8">
+      
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md bg-gradient-to-l from-gray-600 to-gray-500 text-white || after:content-[''] after:absolute after:-top-2 after:-right-2 after:h-full after:w-full after:bg-primary after:rounded-tr-[50px] after:rounded-bl-[50px] after:z-[-1]">
+                <p class="text-lg font-normal py-2 leading-10" data-text="why_desc1">
+                  يعمل لدينا فريق مختار بعناية من القانونيين المتمرسين حيث نسعى جاهدين لتوفير أفضل مستوى من الخدمة بقدرة وكفاءة عالية.
+                  يتميز أعضاء شركتنا بما عرف عنهم من النزاهة والحرص والعمل الجاد والقدرة على تقييم الأوضاع القانونية وتقديم الخدمات
+                  بفعالية وسرعة، والتي تقترن بقدرتنا على إيجاد الحلول المبتكرة لأي صعوبات.
+                </p>
+              </div>
+            
+              <div class="col relative flex flex-col gap-4 p-6 rounded-tr-[50px] rounded-bl-[50px] shadow-md bg-gradient-to-l from-gray-600 to-gray-500 text-white || after:content-[''] after:absolute after:-top-2 after:-right-2 after:h-full after:w-full after:bg-primary after:rounded-tr-[50px] after:rounded-bl-[50px] after:z-[-1]">
+                <p class="text-lg font-normal py-2 leading-10" data-text="why_desc2">
+                  نحن نقوم بوضع أنفسنا مكان عملينا والتصرف بالوكالة عنه في الوقت المناسب لتحقيق أفضل وأحسن النتائج له حرصًا على رضا
+                  عميلنا.
+                </p>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 relative overflow-hidden bg-gradient-to-l from-primary to-light">
+        <div class="container">
+      
+          <p class="text-[26px] text-center font-semibold leading-7 max-w-[550px] mx-auto text-white" style="line-height: 2;" data-text="other_section_text">
+            "نخبة متميزة من المحامين والمستشارين المتخصصين في المجال القانوني"
+          </p>
+            
+        </div>
+      </section>
+
+      <section id="contact" class="h-[90vh] py-12">
+        <h3 class="main-title text-3xl md:text-[33px] font-bold text-center mb-5" data-text="contact_title">
+          تواصل معنا
+        </h3>
+        <div class="container h-full flex flex-col gap-10 justify-center items-center">
+      
+          <!-- Logo -->
+          <figure class="logo flex gap-2 relative">
+            <img src="./assets/images/logo-removebg-preview.png" alt="logo" height="250px" width="270px" class="object-contain rounded-md"
+              loading="lazy">
+          </figure>
+
+          <div class="contact px-5 xl:px-40 mx-auto flex gap-3 items-center justify-center">
+
+            <div class="gmail">
+              <a href="mailto:qamk2022@gmail.com" class="insta text-white text-2xl cursor-pointer bg-amber-700 hover:bg-amber-800 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="whats">
+              <a href="https://wa.me/+966508653111" target="_blank" class="insta text-white text-2xl cursor-pointer bg-[#25d366] hover:bg-[#23b357] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+
+            <div class="call">
+              <a href="tel:/+966508653111" class="insta text-white text-2xl cursor-pointer bg-blue-500 hover:bg-blue-600 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                <i class="fas fa-phone-flip"></i>
+              </a>
+            </div>
+
+
+          </div>
+
+          <p class="flex flex-col justify-center items-center gap-2 text-center font-medium">
+            <i class="fas fa-location-dot text-3xl text-primary"></i>
+            <span data-text="contact_location">
+              الرياض - حي المصيف - طريق ابو بكر الصديق رضي الله عنه
+            </span>
+          </p>
+
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="py-5 bg-primary text-white text-center">
+      <p data-text="copyright">جميع الحقوق محفوظة لشركة بصمة الرؤية 2024</p>
+    </footer>
+    
+
+    <script src="./assets/js/all.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
